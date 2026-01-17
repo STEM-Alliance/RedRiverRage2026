@@ -6,14 +6,9 @@ package frc.robot;
 
 import static frc.robot.Constants.*;
 
-import org.photonvision.PhotonCamera;
-
 import frc.robot.Constants.kAlignmentOffsets;
 import frc.robot.Constants.kElevatorSetpoints;
 import frc.robot.Constants.kShooterSetpoints;
-import frc.robot.commands.AlignToReefCommand;
-import frc.robot.commands.ApriltagAlignment;
-import frc.robot.commands.ApriltagOverride;
 import frc.robot.commands.DriveForwardMeters;
 import frc.robot.commands.DriveToPoseCommand;
 import frc.robot.subsystems.ClimbSubsystem;
@@ -24,34 +19,24 @@ import frc.robot.subsystems.LEDSubsystem;
 //import frc.robot.subsystems.ElevatorSubsystem;
 import frc.robot.subsystems.VisionSubsystem;
 import frc.robot.util.Elastic;
-import edu.wpi.first.math.MathUtil;
-import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation3d;
 import edu.wpi.first.math.geometry.Transform3d;
 import edu.wpi.first.math.geometry.Translation3d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
-import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.event.BooleanEvent;
-import edu.wpi.first.wpilibj.event.EventLoop;
 import edu.wpi.first.wpilibj.smartdashboard.Field2d;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.FunctionalCommand;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
-import edu.wpi.first.wpilibj2.command.RunCommand;
 import edu.wpi.first.wpilibj2.command.WaitCommand;
 import edu.wpi.first.wpilibj2.command.button.CommandJoystick;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
-import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
 
-import com.ctre.phoenix6.hardware.TalonFX;
 import com.pathplanner.lib.auto.*;
 import com.pathplanner.lib.commands.PathPlannerAuto;
 import com.pathplanner.lib.util.PathPlannerLogging;
-import com.revrobotics.spark.SparkLowLevel.MotorType;
-import com.revrobotics.spark.SparkMax;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a

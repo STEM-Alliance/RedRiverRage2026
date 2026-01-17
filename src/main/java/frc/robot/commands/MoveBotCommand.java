@@ -7,24 +7,8 @@ package frc.robot.commands;
 import frc.robot.subsystems.DrivetrainSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 
-import java.text.DecimalFormat;
-
-import edu.wpi.first.apriltag.AprilTagDetector.Config;
-import edu.wpi.first.math.controller.PIDController;
-import edu.wpi.first.math.controller.ProfiledPIDController;
 import edu.wpi.first.math.geometry.Pose2d;
-import edu.wpi.first.math.kinematics.ChassisSpeeds;
-import edu.wpi.first.math.trajectory.TrapezoidProfile.Constraints;
-import edu.wpi.first.math.trajectory.TrapezoidProfile;
-import edu.wpi.first.networktables.NetworkTable;
-import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.networktables.NetworkTableInstance;
-import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.DriverStation.Alliance;
-import edu.wpi.first.wpilibj.smartdashboard.*;
-import frc.robot.*;
-
 
 /** An example command that uses an example subsystem. */
 public class MoveBotCommand extends Command {
@@ -71,10 +55,10 @@ public class MoveBotCommand extends Command {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    Pose2d curPose = m_subsystem.getPose();
-    double xdiff = curPose.getX() - m_initialPose.getX();
-    double ydiff = curPose.getY() - m_initialPose.getY();
-    //System.out.println("xdiff: " + xdiff + " ydiff: " + ydiff);
+    // Pose2d curPose = m_subsystem.getPose();
+    // double xdiff = curPose.getX() - m_initialPose.getX();
+    // double ydiff = curPose.getY() - m_initialPose.getY();
+    // System.out.println("xdiff: " + xdiff + " ydiff: " + ydiff);
     double diffTime = Timer.getFPGATimestamp() - m_iniitalTime;
     if (diffTime > 2.75) {
       return true;

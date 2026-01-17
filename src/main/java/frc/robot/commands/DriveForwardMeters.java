@@ -1,15 +1,11 @@
 package frc.robot.commands;
 
-import static frc.robot.Constants.kMaxAlignmentAngularSpeed;
-import static frc.robot.Constants.kMaxAlignmentSpeed;
-
 import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.DrivetrainSubsystem;
-import frc.robot.subsystems.VisionSubsystem;
 import frc.robot.util.DataLogHelpers;
 
 /** An example command that uses an example subsystem. */
