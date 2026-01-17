@@ -1,0 +1,55 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 1 V2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 2 V2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 3 V2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 4 V2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 5 V2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 6 V2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Choreo 7 V2"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "Dev",
+  "choreoAuto": true
+}

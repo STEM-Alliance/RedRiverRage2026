@@ -1,0 +1,125 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "AlignRightOffset"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SetState L4"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot 3 Sec"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SetState IDLE"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "RT Reef To Pickup"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "Just SetState INTAKE"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Intake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "Stop"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 0.5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Pickup to RB Reef"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "AlignLeftOffset"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SetState L4"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot 3 Sec"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SetState IDLE"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "Dev",
+  "choreoAuto": false
+}

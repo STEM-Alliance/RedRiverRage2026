@@ -1,0 +1,14 @@
+Tune new shooter motor (and speed up elevator)
+Use a slightly wider camera so the Apriltag can be in view even while aligned, teflon tape lens
+Simple reef alignment with PathPlanner
+Improve odomtry (wheel radius calculator + vision deviation tweaks)
+Improve autos (make smoother and faster, get rid of delays, elevator while moving)
+Improve PathPlanner reef alignment to get the nearest side of the reef and align to it
+Use field position to allow for intaking and shooting both sides - 1 button instead of seperate?
+Hook up new pi psu and cameras, use limelight for driver camera
+Auto align orientation for intake but not translation
+Controller rumble on align, intake, and shoot
+
+Use new PI with PSU and cameras, use limelight for driver camera
+If we still have the stolen-from-work lenses, we should use the one above what is currently used.
+Use teflon tape on lenses with loctite and refocus in PhotonVision.

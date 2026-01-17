@@ -1,0 +1,50 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 7.5
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AlignLeftOffset"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SetState L4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot 3 Sec"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SetState IDLE"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": false,
+  "folder": "Dev",
+  "choreoAuto": false
+}

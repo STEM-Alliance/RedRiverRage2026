@@ -1,0 +1,56 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Drive Out RT"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AlignRightInterrupt"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AlignRightOffset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SetState L4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot 3 Sec"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SetState IDLE"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "Dev",
+  "choreoAuto": false
+}
